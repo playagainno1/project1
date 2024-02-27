@@ -1,0 +1,18 @@
+env: "dev"
+addr: ":8000"
+database:
+  driver: "mysql"
+  dsn: "worker:123456@tcp(localhost:3306)/taylor?charset=utf8mb4&maxAllowedPacket=0"
+cookie:
+  name: "SESSIONID"
+  secret: "18VbdDeddXjpFbYYpMiGmTAomfsHxPDy"
+  domain: "localhost"
+  maxAge: 315360000
+  path: "/"
+  secure: false
+  httpOnly: false
+  sameSite: 4
+redis:
+  addr: "localhost:6379"
+  password: ""
+  db: 1
